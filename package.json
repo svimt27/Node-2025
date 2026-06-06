@@ -1,0 +1,23 @@
+{
+  "name": "node-backend",
+  "version": "1.0.0",
+  "description": "learning backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svimt27/Node-2025.git"
+  },
+  "author": "shivam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svimt27/Node-2025/issues"
+  },
+  "homepage": "https://github.com/svimt27/Node-2025#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
