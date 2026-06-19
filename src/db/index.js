@@ -9,7 +9,7 @@ const connectDB = async () => {
     );
 
     console.log(
-      `MongoDB Connected: ${connectionInstance}`
+      `MongoDB Connected: ${  connectionInstance.connection.host}:${connectionInstance.connection.port}/${DB_NAME}`
     );
   } catch (error) {
     console.error("MongoDB Connection Failed:", error.message);
