@@ -40,7 +40,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:[true,"Password is required"],
     },
-    refeshToken:{
+    refreshToken:{
         type:String,
     }
 },{timestamps: true});
@@ -50,7 +50,7 @@ userSchema.pre('save', async function(){
      this.password = await bcrypt.hash(this.password,10);
     // next();
 });
-userSchema.methods.isPasswordCorrect = async function(password){
+userSchema.methods.isPasswordCorrect = async function(password){    
   return await bcrypt.compare(password,this.password);
 }
 
